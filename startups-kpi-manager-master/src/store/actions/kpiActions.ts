@@ -45,14 +45,6 @@ const loadingKpisOperation: Function = (
   };
 };
 
-const updatedKpi: Function = (
-  request: KpiRelatedRequest
-): KpiRelatedRequest => {
-  return {
-    type: request.type,
-    kpi: request.kpi,
-  };
-};
 
 const gotKpi: Function = (request: KpiRelatedRequest): KpiRelatedRequest => {
   return {
@@ -91,7 +83,6 @@ export default {
   kpiCreated,
   gotKpi,
   gotKpis,
-  updatedKpi,
   errorOnKpiOperation,
   clear
 };

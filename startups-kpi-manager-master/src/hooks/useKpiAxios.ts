@@ -2,7 +2,6 @@ import { useCallback } from "react";
 import { useDispatch } from "react-redux";
 import allActions from "../store/actions/allActions";
 import { KpiActions } from "../store/actions/ActionTypes";
-import { kpiStartUpManagerAxios } from "../config/axios/KpiStartUpManagerAxios";
 import { SampleKpis } from "../assets/sample-data/SampleKpis";
 import { Kpi, PymeKpiWrapper } from "../types/Kpi";
 import { KpiRelatedRequestImpl } from "../store/actions/kpiActions";
@@ -107,25 +106,6 @@ const useKpiAxios = () => {
     }
   }, []);
 
-  const updateKpi = useCallback(async (kpi: Kpi, pymeId: string) => {
-    try {
-      //   const result = await kpiStartUpManagerAxios.put('/pyme', pyme);
-      const result = await updateFakeKpi(kpi, pymeId);
-      dispatch(
-        pymeActions.updatedKpi(
-          new KpiRelatedRequestImpl(
-            KpiActions.KPI_UPDATED,
-            result.data,
-            undefined,
-            undefined
-          )
-        )
-      );
-    } catch (error: any) {
-      handleError(error);
-    }
-  }, []);
-
   const getFakeKpi = (
     kpiId: string, pymeId: string
   ): Promise<KpiContainerObject> => {
@@ -164,7 +144,6 @@ const useKpiAxios = () => {
     getKpiPointer: getKpi,
     getKpisPointer: getAllKpis,
     createKpiPointer: createKpi,
-    updateKpiPointer: updateKpi,
     startKpiOperationPointer: startOperation,
   };
 };
