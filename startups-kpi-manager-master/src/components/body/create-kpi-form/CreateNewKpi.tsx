@@ -58,7 +58,7 @@ const CreateNewKpi = (props: any) => {
 
   return (
     <div>
-      <Card width={90} padding={"1rem"}>
+      <Card width={50} padding={"1rem"}>
         <div>
           <div className={classes.title}>
             <p>Creacion del KPI</p>
@@ -73,8 +73,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -87,8 +87,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -101,8 +101,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -115,8 +115,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -129,8 +129,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"Numeró de personas"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -143,8 +143,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -157,8 +157,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"USD"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
@@ -171,8 +171,8 @@ const CreateNewKpi = (props: any) => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <CustomInputComp
-                label={"Unidad de medicion del KPI"}
-                placeholder={"Ingrese el valor"}
+                label={"Unidad"}
+                placeholder={"Numeró de clientes"}
                 change={(e: any) => changeAttributeUndHandler(e)}
               />
             </Grid>
